@@ -10,7 +10,16 @@
         let jugador = 0
         let pc = 2
         jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera")
-        alert("Elegiste" + jugador)
+        if(jugador == 1) {
+            alert("elegiste piedra 🪨")
+        } else if(jugador == 2){
+            alert("elegiste tijera ✂️")
+        }
+            else if(jugador == 3){
+            alert("elegiste papel 📄") 
+        } else {
+            alert("Not avalible")
+        }
     </script>
 </head>
 <body>

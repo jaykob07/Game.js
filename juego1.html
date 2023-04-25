@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more fast!</title>
+    <script>
+        function aleatorio(min, max){
+        return Math.floor(Math.random()*(max-min+1) + min)
+        }
+
+        function velocidad(marca) {
+        let resultado = ""
+        if (marca == 1) {
+        resultado = "renault"
+        } else if (marca == 2) {
+        resultado = "mazda"
+        } else if (marca == 3) {
+        resultado = "ferrari"
+        } else {
+            resultado = `not found`
+        }
+        return resultado 
+        }
+
+        
+        let jugador = 0
+        let pc = aleatorio (1, 3)
+        
+        jugador = prompt("elige el vehiculo")
+
+        alert (`pc elige: ` + velocidad(pc))
+        alert(`tu eliges: ` + velocidad(jugador))
+            
+        if (pc == jugador){
+        alert (`misma velocidad`)
+        } else if (jugador == 2 && pc 1){
+        alert (`win!`)
+        }  else if (jugador == 3 && pc 1){
+        alert (`win!`)
+        }  else if (jugador == 3 && pc 2){
+        alert (`win!`)
+        }  else {
+        alert (`perdiste`)
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
